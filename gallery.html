@@ -6,6 +6,9 @@ gallery:
     background_image: /images/the-sleep-co-original1.jpg
   - column-size: col-4_sm-12
     aspect-ratio: square
+    background_image: /images/the-sleep-co-original1.jpg
+  - column-size: col-4_sm-12
+    aspect-ratio: square
     background_image: /images/the-sleep-co-original2.jpg
   - column-size: col-12
     aspect-ratio: landscape
@@ -33,7 +36,7 @@ gallery:
 
 <section class="padded">
     
-  <div class="gallery grid">
+<div class="gallery grid">
     {% for item in page.gallery %}
 
     <div class="{{item.column-size}}">
@@ -45,24 +48,3 @@ gallery:
     {% endfor %}
 </div>
 </section>
-
-<!--<div class="gallery grid">
-        <div class="col-6">
-          <div class="bg-image square bg-img-1"></div>
-        </div>
-        <div class="col-6">
-          <div class="bg-image square bg-img-2 bg-pos-b"></div>
-        </div>
-        <div class="col-4_xs-12">
-          <div class="bg-image portrait-tall bg-img-3"></div>
-        </div>
-        <div class="col-4_xs-12">
-          <div class="bg-image portrait-tall bg-img-4"></div>
-        </div>
-        <div class="col-4_xs-12">
-          <div class="bg-image portrait-tall "></div>
-        </div>
-        <div class="col-12">
-          <div class="bg-image landscape bg-img-5"></div>
-        </div>
-    </div>-->
